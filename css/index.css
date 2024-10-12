@@ -1,0 +1,1248 @@
+/* RESET CSS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+
+    --colorMainUno:#77CF8D;
+    --colorMainDos:#9ee2af;
+    --colorMainTres:#198754;
+}
+
+body,header,main,nav,footer,section,html{
+    width: 100%;
+}
+
+body,html{
+   
+font-family: "Mulish", sans-serif;;
+background-color: var(--colorMainUno);
+}
+
+/* OVERLAY */
+
+.overlay{
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2002;
+    display: none;
+}
+
+/* MENU WHATSSAP */
+
+.whatsapp-container{
+
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000;
+}
+.whatssap-background{
+    background-color: rgb(255, 255, 255);
+    width: 47px;
+    height: 49px;
+    text-align: center;
+    align-content: center;
+    border-radius:50px;
+    
+}
+
+#whatssap-icon{
+    width: 44px;
+    filter:hue-rotate(10deg);
+}
+
+/* RELLENO NAV:*/
+
+#relleno{
+    height: 190px;
+}
+
+
+/* ----------------NAV BAR---------------- */
+
+.envios,.redes{
+    height:25px;
+    background-color: var(--colorMainDos);
+
+}
+
+.envios{
+    width: 100vw;
+    text-align: center;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+
+}
+
+
+.navbar{
+    padding-top: 0;
+   
+}
+
+.redes-envios{
+    display: none;
+}
+
+nav{
+
+background-color: rgb(119, 207, 141);
+height: 190px;
+position: fixed !important;
+
+
+}
+
+/* ICONO CARRITO*/
+
+.icon-basket,.icon-user-o,.icon-menu{
+    font-size: 1.8rem;
+    z-index: 2001 ;
+    
+}
+
+.icon-basket{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.carrito-count{
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    background-color: var(--colorMainTres);
+    color: white;
+    padding: 3px;
+    border-radius:10px;
+    position: absolute;
+    right: -2px;  
+    top:-2px;  
+    text-align: center;
+    
+}
+
+.icon-menu{
+    font-size: 1.6rem;
+    
+}
+
+
+.navbar{
+ z-index:2002;
+ 
+}
+
+
+.navbar-nav,.barraMenu{
+    width:75vw;
+}
+
+.barraMenu,.menuCarrito{
+
+    height: 100vh;
+    top:0;
+    left: 0;
+    background-color:var(--colorMainUno);
+    transform: translateX(-105%);
+    transition: 0.5s;
+    color: white;
+   
+    
+  }
+
+
+input[type=checkbox]{
+    display: none;
+}
+
+#logo{
+    margin-top: 5px;
+}
+
+#logo img{
+
+    width:85px;
+    
+}
+.container-fluid a{
+    display: block;
+    margin:0 auto;
+}
+
+
+.navbar-nav> li:first-child{
+    margin-top: 90px;
+}
+
+
+
+.dropdown-menu{
+    background-color: var(--colorMainDos);
+  }
+
+.dropdown-toggle::after{
+   display: none;
+}
+
+
+.icon-down-open{
+    position: absolute;
+    right: 20px;
+    font-size: 1.4rem;
+
+}
+
+/* BARRA MENU*/
+
+.redes a{
+    display: block;
+    color: green;
+    font-size:1rem;
+    
+}
+
+.redes{
+    display: flex;
+    
+}
+
+.barraMenu{
+    position: relative;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1000;
+    
+}
+
+
+
+.barraMenu li a{
+    color: white;
+    display: block;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+#menu-bar:checked ~ .barraMenu{
+    transform:translateX(0%);
+
+}
+
+/* SESION MENU*/
+
+.sesion-menu{
+    background-color: #229955;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+    width: 75vw;
+    transition: 0.5s;
+}
+
+.icon-user-o{
+    margin-left: 10px;
+    
+}
+
+.sesion-menu a,.sesion-menu2 a{
+    
+    display: block;
+    width: 120px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+
+.sesion-menu{
+    transform:translateX(-105%);
+  }
+
+
+#menu-bar:checked ~ .sesion-menu{
+  transform:translateX(0%);
+  transition: 0.5s;
+}
+
+
+/* MENU CARRITO */
+ .menuCarrito{
+    position: absolute;
+    z-index:2003 !important;
+    width: 100%;
+    transform: translateX(125%);
+  
+} 
+
+
+#carrito-bar:checked ~ .menuCarrito{
+    transform:translateX(0%);
+}
+
+#carrito-bar:checked ~ .icon-basket,#menu-bar:checked ~ .icon-menu{
+color: white;
+transition: color 1s ease;
+ 
+}
+
+#carrito-close:checked ~ .menuCarrito {
+    transform:translateX(100%);
+
+}
+
+
+.encabezado-carrito{
+    display: flex;
+    align-items: center;
+    height:60px;
+    background-color: #9ee2af;;
+}
+
+.close-button{
+  margin:0px 20px 10px 10px ;
+    width: 30px;
+}
+
+
+/* CARRITO INFO */
+
+.alert{
+    width: 90%;
+    margin: 1.2rem auto;
+
+}
+
+form{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+/* BUSCADOR */
+
+#buscador{
+
+   position: relative;
+   
+ 
+}
+
+#buscador input{
+    height: 46px;
+    
+}
+
+
+
+#buscador button{
+    position: absolute;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    right: 10px;
+    top: 0px;
+  
+}
+
+
+.icon-search{
+    font-size:1.9rem;
+    color: green;
+   
+}
+
+
+
+/* ----------------HEADER---------------- */
+
+
+
+
+/* CAROUSEL */
+header{
+    height: 690px;
+}
+
+header .carousel-item img{
+    height: 490px;
+    object-fit: cover;
+    opacity: .9;
+
+}
+
+
+.carousel{
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-indicators button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background-color: #666; 
+}
+
+/* CAROUSEL SERVICES*/
+
+.banner2{
+    height: 140px;
+    background-color: var(--colorMainDos);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.encabezado-banner2 h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.encabezado-banner2 p{
+    font-size: 1rem;
+
+}
+.icon-truck,.icon-credit-card{
+   font-size: 3.2rem;
+}
+
+
+#checkout{
+    width: 51px;
+    height: 51px;
+}
+
+blockquote{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+
+}
+blockquote i,blockquote img{
+    margin-right: 15px;
+}
+
+
+/* ----------------MAIN---------------- */
+
+
+
+/* SECCIONES PRODUCTOS */
+    
+#catalogo{
+
+    margin: 5rem auto;
+    
+}
+
+#catalogo section{
+    margin-bottom: 50px;
+}
+
+
+section img{
+
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* CATALOGO PRODUCTOS */
+
+#carouselProductos {
+  position: relative;
+  height: 100%;
+  width: 100% ;
+  background: var(--colorMainUno);
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 2em;
+    
+}
+
+#carouselProductos h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+       
+    }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--colorMainUno);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    padding: 20px;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius:5px;
+ 
+  }
+
+  .swiper-slide button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 8px;
+    
+}
+
+
+  .swiper-button-next,.swiper-button-prev{
+   
+    color: white;
+    display: none;
+    
+  }
+  /* REDES SOCIALES */
+
+  #contacto-redes{
+    text-align: center;
+    width: 260px;
+    margin:0 auto;
+    padding: 25px;
+    background-color: var(--colorMainDos);
+    border-radius: 15px;
+    margin-top: 5rem;
+  }
+
+  #contacto-redes i{
+    font-size: 2rem;
+  }
+
+  #contacto-redes a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #363636;
+ 
+
+  }
+
+  #contacto-redes button{
+    padding: 8px;
+    border-radius: 50px;
+    width: 150px;
+    outline: none;
+    color: white;
+    background-color:var(--colorMainUno) ;
+    margin: 0 auto;
+  }
+
+  /* NEWSLETTER */
+
+  .newsletter{
+    background-color: var(--colorMainTres);
+    margin-top: 5rem;
+    color: white;
+  }
+
+/* ---------------- FOOTER ---------------- */
+
+  footer{
+  
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 630px;
+}
+
+footer div{
+    margin-bottom: 1rem;
+}
+
+footer h4{
+    font-weight: bold;
+}
+
+  /* FOOTER-VINCULOS*/
+
+  #footer-vinculos{
+    display: flex;
+    font-size: .8em;
+    gap: 30px;
+
+  }
+  #footer-vinculos section{
+    margin-top: 2.9rem;
+    width:40%;
+  }
+
+  #footer-vinculos section ul li{
+    padding: 8px 0;
+  }
+
+  #footer-contacto a{
+    margin-left:2px
+  }
+
+
+  #footer-seguinos div{
+    display: flex;
+     gap: 15px;
+     margin-top: 1em;
+  }
+
+  #footer-seguinos a{
+    background-color: rgb(22, 180, 22);
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+   
+  }
+
+  .icon-instagram,.icon-facebook{
+    font-size: 1.1rem;  }
+
+  #footer-medios-pago div{
+    display: flex;
+    
+  }
+
+  #footer-medios-pago div img{
+    width: 35px;
+  }
+
+  #footer-copyAutor{
+    position: absolute;
+    bottom: -25px;
+    font-size: .9rem;
+
+  }
+
+
+@media screen and (min-width:768px){
+
+/* RELLENO NAV:*/
+
+#relleno{
+    height: 240px;
+}
+
+/* NAV BAR */
+
+.redes{
+    display: none;
+}
+
+.envios-redes{
+   position: absolute;
+   top: 0;
+}
+
+.redes-envios{
+    display: flex;
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    
+}
+
+.redes-envios a{
+    display: block;
+    color: green;
+    font-size:1rem;
+    
+}
+
+.icon-menu{
+    display: none;
+}
+
+
+/* ICONO CARRITO*/
+
+.icon-basket,.icon-user-o,.icon-menu{
+    font-size: 1.8rem;
+    z-index: 2001 ;
+    
+    
+}
+
+.icon-basket{
+    position: absolute;
+    right: 15px;
+    top: 52px;
+}
+
+.carrito-count{
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    background-color: var(--colorMainTres);
+    color: white;
+    padding: 3px;
+    border-radius:10px;
+    position: absolute;
+    right: -2px;  
+    top:-2px;  
+    text-align: center;
+    
+}
+
+.menuCarrito{
+    height: 100vh;
+
+  }
+
+  .barraMenu{
+    height: auto;
+  }
+
+
+.barraMenu{
+
+    top:0;
+    left: 0;
+    background-color:var(--colorMainUno);
+    transform: translateX(0%);
+    transition: opacity .4s ease-in;
+    color: white;
+    opacity: 1;
+    
+  }
+
+
+#logo img{
+    position: absolute;
+    top: 36px;
+    left: 50px;
+    width:75px;
+
+}
+
+/* BUSCADOR */
+
+#buscador{
+    width: 60%;
+    margin-left: -150px;
+}
+
+
+.navbar{
+    height: 120px;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.navbar-nav  li{
+  padding-right: 40px;
+}
+
+
+.container-fluid a{
+    display: block;
+    margin:0 auto;
+}
+
+
+.navbar-nav> li:first-child{
+    margin-top: 0
+}
+
+.barraMenu{
+
+    /* height: 150px; */
+    width: 100%;
+    overflow-y: visible;
+    position: fixed;
+    top: 120px;
+
+}
+
+.barraMenu li a{
+    color: white;
+    display: block;
+    height: 60px;
+    border-bottom: none;
+    padding-left: 20px;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-item .dropdown-menu{
+    background-color: var(--colorMainDos);
+    position: absolute;
+    top:40px; 
+    overflow-y: scroll;
+    max-height: 500px; 
+
+    
+ }
+
+ .nav-item:hover .dropdown-menu{
+    display: block ;
+}
+
+
+.icon-down-open{
+    position: absolute;
+    right:8px;
+    top: 4px;
+    font-size: 1.4rem;
+
+}
+
+#menu-bar:checked ~ .barraMenu{
+    transform:translateX(0%);
+
+
+}
+
+#menu-bar:not(:checked) ~ .barraMenu{
+
+    position: -ms-page  ;
+
+    
+}
+
+/* SESION MENU PANTALLAS MAYORES 768PX*/
+
+.sesion-menu{
+    display: none;
+}
+
+
+.sesion-menu2{
+    position: absolute;
+    top:60px;
+    right: 50px;
+    
+}
+.sesion-menu2 .dropdown-menu{
+    background-color: var(--colorMainUno);
+    
+}
+
+
+
+.icon-user-o{
+    color: black;
+    padding-left: 50px;
+    position: absolute;
+    right: 10px;
+    top: -9px;
+    
+}
+
+
+
+
+
+.sesion-menu2 .dropdown-menu{
+    z-index:2300 ;
+    position: absolute;
+    right: 100px;
+
+}
+
+
+/* MENU CARRITO */
+.menuCarrito{
+    position: absolute;
+    z-index:2003 !important;
+    width: 65%;
+    transform: translateX(155%);
+  
+} 
+
+
+#carrito-bar:checked ~ .menuCarrito{
+    transform:translateX(55%);
+}
+
+#carrito-bar:checked ~ .icon-basket,#menu-bar:checked ~ .icon-menu{
+color: white;
+transition: color 1s ease;
+ 
+}
+
+#carrito-close:checked ~ .menuCarrito {
+    transform:translateX(100%);
+
+}
+
+#carrito-close2:checked ~ .barraMenu {
+    transform:translateX(100%);
+
+}
+
+
+
+.encabezado-carrito{
+    display: flex;
+    align-items: center;
+    height:60px;
+    background-color: #9ee2af;;
+}
+
+
+
+/* CARRITO INFO */
+
+.alert{
+    width: 90%;
+    margin: 1.2rem auto;
+
+}
+
+form{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+
+ 
+
+    /* CAROUSEL HEADER */
+    .banner2>.carousel,.banner2>.carousel-inner,.banner2>.carousel-inner .carousel-item{
+        display: flex;
+        
+    }
+    .carousel-inner {
+        display: flex;
+      }
+
+    .banner2 .carousel-inner>.carousel-item {
+        display: flex;
+        flex: 1;
+
+        opacity: 1 !important;
+        position: relative !important;
+        transform: none !important;
+        
+      }
+
+      .banner2 .carousel>.carousel-indicators{
+        display: none !important; 
+        
+      }
+
+
+
+      /* CAROUSEL SERVICES*/
+
+    .banner2{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner2 .carousel-item p{
+        width: 45%;
+    }
+
+    .banner2 .carousel-item{
+        width: 30% !important;
+    }
+
+    .encabezado-banner2 h3{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+
+    blockquote{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+
+    }
+
+
+    blockquote i,blockquote img{
+        margin-right: 15px;
+    }
+
+    /* SECCIONES PRODUCTOS */
+    
+
+    #catalogo{
+        margin: 5rem auto 2rem auto;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+       
+    }
+
+    #catalogo section{
+        width: 30%;
+    
+    }
+
+    section img{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* CATALOGO PRODUCTOS */
+
+#carouselProductos {
+    position: relative;
+    height: 100%;
+    width: 100% ;
+    background: var(--colorMainUno);
+    font-size: 14px;
+    color: #000;
+    margin-top: 8rem;
+      
+  }
+
+  #carouselProductos section{
+    margin-bottom: 2rem;
+  
+    
+}
+  
+  #carouselProductos h3{
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.8em;
+      color:rgb(243, 243, 243);
+  }
+  
+      .swiper {
+          width: 95%;
+          height: 100%;          
+
+      }
+  
+    .swiper-slide {
+
+      text-align: center;
+      font-size: 15px;
+      background: var(--colorMainUno);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 250px;
+      
+  
+    }
+  
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius:5px;
+   
+    }
+  
+    .swiper-slide button{
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 8px;
+      
+  }
+  
+  
+    .swiper-button-next,.swiper-button-prev{
+     
+
+      display: block;
+      position: absolute;
+      top: 100px;
+ 
+      
+    }
+
+
+
+   /* NEWSLETTER */
+
+   .newsletter{
+    background-color: var(--colorMainTres);
+    margin-top: 5rem;
+    color: white;
+    text-align: left;
+  }
+
+  .newsletter input{
+    width: 80% !important;
+  }
+
+
+}
+
+
+@media screen and (min-width:1033px){
+    /* RELLENO NAV:*/
+
+    #relleno{
+        height:180px;
+        
+}
+
+    /* MENU CARRITO */
+    .menuCarrito{
+        position: absolute;
+        z-index:2003 !important;
+        width: 50%;
+        transform: translateX(200%);
+    
+    } 
+
+
+    #carrito-bar:checked ~ .menuCarrito{
+        transform:translateX(100%);
+    }
+
+    #carrito-bar:checked ~ .icon-basket,#menu-bar:checked ~ .icon-menu{
+    color: white;
+    transition: color 1s ease;
+    
+    }
+
+    #carrito-close:checked ~ .menuCarrito {
+        transform:translateX(100%);
+
+    }
+
+    #carrito-close2:checked ~ .barraMenu {
+        transform:translateX(100%);
+
+    }
+
+
+
+    .encabezado-carrito{
+        display: flex;
+        align-items: center;
+        height:60px;
+        background-color: #9ee2af;;
+    }
+
+    /* BUSCADOR */
+ 
+    .navbar-nav{
+
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 20px;
+        
+    }
+
+    .navbar-nav  li{
+    padding-right: 40px;
+    }
+
+
+    .container-fluid a{
+        display: block;
+        margin:0 auto;
+    }
+
+
+    .navbar-nav> li:first-child{
+        margin-top: 0
+    }
+  
+}
+
+@media screen and (min-width:1200px){
+
+
+    /* ICONO CARRITO*/
+
+
+.icon-basket{
+    position: absolute;
+    right: 20px;
+    top: 52px;
+}
+
+
+
+    /* ICONO USUARIO */
+    .icon-user-o{
+        color: black;
+        padding-left: 50px;
+        position: absolute;
+        right: 25px;
+        top: -10px;
+    
+        
+    }
+
+    .swiper {
+        width: 80%;
+        height: 100%;          
+
+    }
+
+
+        /* MENU CARRITO */
+        .menuCarrito{
+            position: absolute;
+            z-index:2003 !important;
+            width: 35%;
+            transform: translateX(300%);
+        
+        } 
+    
+    
+        #carrito-bar:checked ~ .menuCarrito{
+            transform:translateX(190%);
+        }
+    
+
+}

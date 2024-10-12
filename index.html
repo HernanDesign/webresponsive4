@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriVida</title>
+
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">  
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- Fontello icons -->
+     <link rel="stylesheet" href="css/fontello.css">
+     <!-- Mi Hoja de estilos-->
+     <link rel="stylesheet" href="css/index.css">
+    
+     <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+     <!-- Theme Color -->
+     <meta name="theme-color" content="#99CC00">
+
+     <!-- Favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+     <link rel="manifest" href="assets/icons/site.webmanifest">
+
+     <!-- Metatags -->
+      <meta name="description" content="">
+      <meta name="lang" content="es">
+      <meta name="keywords" content="porfolio,frutos secos,dietética,comer sano">
+      <meta name="distribution" content="global">
+      <meta name="author" content="Hernan Viñales">
+      <meta name="robots" content="index, all, follow">
+
+</head>
+<body>
+  <!-- NAV BAR --> 
+  <div class="overlay"></div>
+  <div class="whatsapp-container">
+    <a id="whatssap-toggle" href="https://wa.me/541222222222?text=Hola quiero información de un producto" target="_blank">
+      <div class="whatssap-background">
+        <img id="whatssap-icon" src="assets/img/whatsapp-fill.svg" alt="" >
+      </div>
+    </a>
+  </div>
+  <nav class="navbar">
+    <div class="envios-redes">
+      <span class="envios">Envios a todo el pais!. Cuotas sin interés</span>
+      <div class="redes-envios " >      
+        <div><a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="icon-instagram"></i></a> </div>
+        <div><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a></div>
+    </div>
+    </div>
+    <div class="container-fluid">
+      <input type="checkbox" id="menu-bar">
+            <label class="icon-menu " for="menu-bar"></label>
+            <!-- BARRA MENU -->
+          <div class="barraMenu">
+                <div class="redes">      
+                    <div><a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="icon-instagram"></i></a> </div>
+                    <div><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a></div>
+                </div>
+   
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" ><a class="nav-link dropdown-toggle" 
+                        data-bs-toggle="dropdown"  
+                        href="index.html"
+                        aria-expanded="false">Alimentos Naturales <i class="icon-down-open"></i></a>        
+                      <ul class="dropdown-menu " >
+                        <li><a class="dropdown-item" href="#">Frutas Secas & Mas</a></li>
+                        <li><a class="dropdown-item" href="#">Alfajores,Bombones & Mas 2</a></li>
+                        <li><a class="dropdown-item" href="#">Barritas,Snacks,Galletitas & Mas</a></li>
+                        <li><a class="dropdown-item" href="#">Cereales & Granolas</a></li>
+                        <li><a class="dropdown-item" href="#">Dulces, Mermeladas & Mas</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false" 
+                        href="#">Despensa <i class="icon-down-open"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Aceites & Aderezos</a></li>
+                        <li><a class="dropdown-item" href="#">Caldos & Sopas</a></li>
+                        <li><a class="dropdown-item" href="#">Endulzantes Naturales</a></li>
+                        <li><a class="dropdown-item" href="#">Especias & Condimentos</a></li>
+                        <li><a class="dropdown-item" href="#">Pastas / Fideos</a></li>
+                        <li><a class="dropdown-item" href="#">Postres & Gelatinas</a></li>
+                        <li><a class="dropdown-item" href="#">Semillas,Legumbres & Mas</a></li>
+                        <li><a class="dropdown-item" href="#">Hierbas Naturales</a></li>
+                        <li><a class="dropdown-item" href="#">Conservas & Encurtidos</a></li>
+                        <li><a class="dropdown-item" href="#">Harinas</a></li>
+                        <li><a class="dropdown-item" href="#">Fideos & Pastas</a></li>
+                          
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Bebidas e Infusiones <i class="icon-down-open"></i></a></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Jugos & Mas</a></li>
+                        <li><a class="dropdown-item" href="#">Leches Vegetales</a></li>
+                        <li><a class="dropdown-item" href="#">Tés del Mundo</a></li>
+                        <li><a class="dropdown-item" href="#">Vinos</a></li>
+                        <li><a class="dropdown-item" href="#">Yerba Mate</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Cosmética <i class="icon-down-open"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Aceites Naturales</a></li>
+                        <li><a class="dropdown-item" href="#">Cuidado Capilar</a></li>
+                        <li><a class="dropdown-item" href="#">Cuidado Dental</a></li>
+                        <li><a class="dropdown-item" href="#">Cuidado Corporal</a></li>
+                        <li><a class="dropdown-item" href="#">Cuidado Facial</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown"><a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Suplementos Naturales <i class="icon-down-open"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Suplementos Nutricionales</a></li>
+                        <li><a class="dropdown-item" href="#">Control de Peso</a></li>
+                        <li><a class="dropdown-item" href="#">Cuidado para la Piel</a></li>
+                        <li><a class="dropdown-item" href="#">Tinturas Madre</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Hogar <i class="icon-down-open"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cuidado Personal</a></li>
+                        <li><a class="dropdown-item" href="#">Sahumerios, Velas y Lamparas</a></li>
+                        <li><a class="dropdown-item" href="#">Articulos del Hogar</a></li>
+                        <li><a class="dropdown-item" href="#">Aromaterapia</a></li>
+                      </ul>
+                    </li>
+                    <!-- <li><a class="nav-link" href="#">Kits</a></li>
+                    <li><a class="nav-link" href="#">Locales</a></li> -->
+                </ul>
+              </div>
+              <div class="sesion-menu">
+                <i class="icon-user-o" ></i>
+                  <ul class="list-unstyled d-flex m-0">
+                    <li><a class="nav-link" href="#">Crear Cuenta</a></li>
+                    <li><a class="nav-link" href="#">Iniciar Sesión</a>
+                </ul></li>
+              </div>
+
+
+              <!-- Para pantallas medianas y grandes (dropdown) -->
+              <div class=" sesion-menu2 dropdown d-none d-md-block">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                  <i class="icon-user-o"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Crear Cuenta</a></li>
+                  <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                </ul>
+              </div>
+          <a id="logo" href="index.html">
+            <img  src="assets/img/logoNutrivida.png" alt="" >  
+          </a>
+            <!-- ICONO CARRITO -->
+
+              <input type="checkbox" id="carrito-bar">
+              <label for="carrito-bar" class="icon-basket">
+                <span class="carrito-count">0</span>
+              </label>
+              
+
+            <!-- BUSCADOR -->
+            <form id="buscador" role="search">
+                <input class="form-control me-2" type="text" placeholder="¿Que estas Buscando?" aria-label="Search">
+                 <button class="btn" type="submit">
+                  <i class="icon-search" type="submit"></i>
+                 </button>
+            </form>
+              <div class="menuCarrito">
+                  <div class="encabezado-carrito">
+                    <input type="checkbox" id="carrito-close">
+                    <label for="carrito-close" ><img class="close-button" src="assets/img/close-line.png" alt=""></label>
+                    <h1>Carrito de Compras</h1>
+                </div>
+
+                    <div class="alert alert-info" data-component="cart.empty-message"><i class="icon-info-circled-alt"></i> El carrito esta vacio</div>    
+                    <!-- <table></table> -->
+              </div>
+    </div>
+     </nav>
+
+     <div id="relleno"></div>
+     <header>
+           <!-- CAROUSEL -->
+     <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/img/carousel-1.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/img/carousel-2.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel-5.jpg" class="d-block w-100" alt="...">
+          
+        </div>
+      </div>
+
+    </div>
+
+    <!--  CAROUSEL SERVICES -->
+    <div class="banner2">
+        <div id="carouselExampleDark2" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <input type="radio" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></input>
+            <input type="radio" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></input>
+            <input type="radio" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></input>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <blockquote class="blockquote">
+                <i class="icon-truck"></i>
+                <div class="encabezado-banner2">
+                    <h3>Envios Gratis</h3>
+                    <p class="mb-0">$29990 (CABA) , $39990 (GBA/Interior)*</p>
+                </div>
+              </blockquote>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <blockquote class="blockquote">
+                <i class="icon-credit-card"></i>
+                  <div class="encabezado-banner2">
+                    <h3>Tarjetas</h3>
+                    <p class="mb-0">Aceptamos todos los medios de pago</p>
+                  </div>
+              </blockquote>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <blockquote class="blockquote">
+                <img id="checkout" src="assets/img/checkout.png" alt="">
+                  <div class="encabezado-banner2">
+                    <h3>Compra Segura</h3>
+                    <p class="mb-0">En Nutritiva cuidamos tus datos</p>
+                  </div>
+              </blockquote>
+            </div>  
+          </div>    
+      </div>
+     </header>
+     <main>
+      <!-- SECCIONES PRODUCTOS  -->
+      <div id="catalogo" class="container">
+        <section>
+          <img src="assets/img/frutos-secos.jpg" alt="">         
+      </section> 
+      <section>
+          <img src="assets/img/bebidas-infusiones.jpg" alt="">         
+      </section> 
+      <section>
+          <img src="assets/img/kit-integral.jpg" alt="">         
+      </section> 
+      </div>
+
+      <!-- CATALOGO PRODUCTOS -->
+      <div id="carouselProductos">
+        <section >
+          <h3>Destacados</h3>
+        <div class="swiper mySwiper pb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-1.jpg" alt="">
+              <span>Dulce Mia</span>
+              <span>$35.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-2.jpg" alt="">
+              <span>Integral Life</span>
+              <span>$20.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-3.jpg" alt="">
+              <span>Integral Life</span>
+              <span>$20.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-4.jpg" alt="">
+              <span>Integral Life</span>
+              <span>$20.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-5.jpg" alt="">
+              <span>Integral Life</span>
+              <span>$20.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-6.jpg" alt="">
+              <span>Integral Life</span>
+              <span>$20.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/catalogo-7.jpg" alt="">
+              <span>Integral Life</span>
+              <span>$20.000</span>
+              <button class="btn btn-success">Agregar</button>
+            </div>
+
+
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide">Slide 11</div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        </section>
+        <section >
+          <h3>Novedades</h3>
+          <div class="swiper mySwiper pb-5">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-kits1.jpg" alt="">
+                <span>Dulce Mia</span>
+                <span>$35.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-kits2.jpg" alt="">
+                <span>Nutricoco Mix</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-kits3.jpg" alt="">
+                <span>TéZen</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-4.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-5.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-6.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-7.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+  
+  
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+              <div class="swiper-slide">Slide 11</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </section>
+        <section>
+          <h3>Kits Recomendados</h3>
+          <div class="swiper mySwiper pb-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-kits1.jpg" alt="">
+                <span>Dulce Mia</span>
+                <span>$35.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-kits2.jpg" alt="">
+                <span>Nutricoco Mix</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-kits3.jpg" alt="">
+                <span>TéZen</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-4.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-5.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-6.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/catalogo-7.jpg" alt="">
+                <span>Integral Life</span>
+                <span>$20.000</span>
+                <button class="btn btn-success">Agregar</button>
+              </div>
+  
+  
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+              <div class="swiper-slide">Slide 11</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </section>
+        </div>
+
+<!-- REDES SOCIALES -->
+      <div id="contacto-redes">
+        <a href="#" target="_blank">
+          <div><i class="icon-instagram"></i>NutriVida</div>
+          <div class="d-flex flex-column">
+            <span>Estamos en Instagram</span>
+            <button class="btn btn-succes mt-2">Seguinos</button>
+          </div>
+        </a>
+      </div>
+<!-- NEWSLETTER-->
+
+</main>
+<section class="newsletter py-4 text-center">
+  <div class="container">
+    <h2 class="mb-4">Recibí nuestras novedades</h2>
+    <p class="mb-4">Get the latest updates and offers.</p>
+    <form class="row g-3 justify-content-center">
+      <div class="col-auto">
+        <label for="email" class="visually-hidden">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="container-md" >
+  <div id="footer-vinculos">
+    <section>
+      <h4>Institucional</h4>
+      <ul class="list-unstyled ">
+        <li><a class="text-decoration-none text-reset" href="#">Sobre Dietética NutriVida</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Condiciones de Envío</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Términos y Condiciones</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Ventas Corporativas</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Trabaja con Nosotros</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Ayuda</h4>
+      <ul class="list-unstyled">
+        <li><a class="text-decoration-none text-reset" href="#">Sobre Dietética NutriVida</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Condiciones de Envío</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Términos y Condiciones</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Ventas Corporativas</a></li>
+        <li><a class="text-decoration-none text-reset" href="#">Trabaja con Nosotros</a></li>
+      </ul>
+    </section>
+  </div>
+  <div id="footer-contacto">
+      <h4>Contactanos</h4>
+      <span><i class="icon-mail"></i><a class="text-decoration-none text-reset" href="mailto:info@nutrivida.com.ar">info@nutrivida.com.ar</a></span>
+  </div>
+  <div id="footer-seguinos">
+      <h4>Seguinos</h4>            
+       <div>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="icon-instagram"></i></a> 
+        <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+       </div>
+  </div>
+  <div id="footer-medios-pago">
+    <h4>Medios de pago</h4>
+    <div>
+      <img src="assets/img/card-1.png" alt="">
+      <img src="assets/img/card-2.png" alt="">
+      <img src="assets/img/card-3.png" alt="">
+      <img src="assets/img/card-4.png" alt="">
+    </div>
+  </div>
+  <div id="footer-copyAutor">
+    <p>
+      NutriTiva - © 2024. Todos los derechos reservados.Diseño y Maquetado: 
+      <a href="https://www.linkedin.com/in/hernan-vinales-304808326/" target="_blank">Hernan Javier Viñales</a>
+   </p>
+  </div>
+</footer>
+     
+    <!-- Scripts de Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script Overlay -->
+    <script src="js/overlay.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/scroll.js"></script>
+
+</body>
+</html>
