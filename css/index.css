@@ -145,11 +145,14 @@ position: relative;
 
 .barraMenu{
     z-index: 2000;
+    overflow-y: scroll;
+    max-height: 94vh;
 }
 
 
 .navbar-nav,.barraMenu{
     width:75vw;
+    
     
     
 }
@@ -164,7 +167,6 @@ position: relative;
     transition: 0.5s;
     color: white;
    
-    
   }
 
 
