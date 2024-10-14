@@ -9,7 +9,7 @@ const carritoClose=document.getElementById('carrito-close')
 const menuBar=document.getElementById('menu-bar')
 const barraMenu=document.querySelector('.barraMenu')
 
-const overlay=document.querySelector('.overlay')
+const overlay=document.querySelector('#overlay')
 
 //cierro el carrito si pulso en la X y reseteo el comportamiento del check del carritoBar
 document.querySelector('.close-button').addEventListener('click',()=>{

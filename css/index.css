@@ -24,14 +24,14 @@ background-color: var(--colorMainUno);
 
 /* OVERLAY */
 
-.overlay{
+#overlay{
     width: 100vw;
     height:100vh;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2002;
+    z-index: 1980 !important;
     display: none;
 }
 
@@ -52,11 +52,6 @@ background-color: var(--colorMainUno);
     align-content: center;
     border-radius:50px;
     
-}
-
-#whatssap-icon{
-    width: 44px;
-    filter:hue-rotate(10deg);
 }
 
 /* RELLENO NAV:*/
@@ -106,10 +101,12 @@ position: fixed !important;
 
 /* ICONO CARRITO*/
 
-.icon-basket,.icon-user-o,.icon-menu{
+.icon-basket,.icon-menu{
     font-size: 1.8rem;
-    z-index: 2001 ;
-    
+}
+
+.icon-basket{
+    z-index: 1000;
 }
 
 .icon-basket{
@@ -130,23 +127,31 @@ position: fixed !important;
     right: -2px;  
     top:-2px;  
     text-align: center;
+    display: none;
     
 }
 
 .icon-menu{
     font-size: 1.6rem;
-    
+    z-index: 2001;
 }
 
 
 .navbar{
- z-index:2002;
+ z-index:1900;
+position: relative;
  
+}
+
+.barraMenu{
+    z-index: 2000;
 }
 
 
 .navbar-nav,.barraMenu{
     width:75vw;
+    
+    
 }
 
 .barraMenu,.menuCarrito{
@@ -169,11 +174,14 @@ input[type=checkbox]{
 
 #logo{
     margin-top: 5px;
+    
+    
 }
 
 #logo img{
 
     width:85px;
+
     
 }
 .container-fluid a{
@@ -185,7 +193,6 @@ input[type=checkbox]{
 .navbar-nav> li:first-child{
     margin-top: 90px;
 }
-
 
 
 .dropdown-menu{
@@ -219,11 +226,8 @@ input[type=checkbox]{
 }
 
 .barraMenu{
-    position: relative;
     overflow-y: auto;
     position: fixed;
-    z-index: 1000;
-    
 }
 
 
@@ -340,18 +344,14 @@ form{
 /* BUSCADOR */
 
 #buscador{
-
    position: relative;
    
- 
 }
 
 #buscador input{
     height: 46px;
     
 }
-
-
 
 #buscador button{
     position: absolute;
@@ -691,10 +691,8 @@ footer h4{
 
 /* ICONO CARRITO*/
 
-.icon-basket,.icon-user-o,.icon-menu{
+.icon-user-o{
     font-size: 1.8rem;
-    z-index: 2001 ;
-    
     
 }
 
@@ -719,18 +717,9 @@ footer h4{
     
 }
 
-.menuCarrito{
-    height: 100vh;
-
-  }
-
-  .barraMenu{
-    height: auto;
-  }
-
 
 .barraMenu{
-
+    height: auto;
     top:0;
     left: 0;
     background-color:var(--colorMainUno);
@@ -760,6 +749,7 @@ footer h4{
 
 .navbar{
     height: 120px;
+    
 }
 
 .navbar-nav{
@@ -768,7 +758,8 @@ footer h4{
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    
+    z-index: 1960;
+    position: rel;
 }
 
 .navbar-nav  li{
@@ -787,13 +778,11 @@ footer h4{
 }
 
 .barraMenu{
-
-    /* height: 150px; */
     width: 100%;
     overflow-y: visible;
-    position: fixed;
     top: 120px;
-
+    z-index: 1000;
+   
 }
 
 .barraMenu li a{
@@ -814,7 +803,7 @@ footer h4{
     top:40px; 
     overflow-y: scroll;
     max-height: 500px; 
-
+    /* display: none; */
     
  }
 
@@ -835,13 +824,6 @@ footer h4{
     transform:translateX(0%);
 
 
-}
-
-#menu-bar:not(:checked) ~ .barraMenu{
-
-    position: -ms-page  ;
-
-    
 }
 
 /* SESION MENU PANTALLAS MAYORES 768PX*/
@@ -888,7 +870,6 @@ footer h4{
 /* MENU CARRITO */
 .menuCarrito{
     position: absolute;
-    z-index:2003 !important;
     width: 65%;
     transform: translateX(155%);
   
@@ -914,7 +895,6 @@ transition: color 1s ease;
     transform:translateX(100%);
 
 }
-
 
 
 .encabezado-carrito{
@@ -1173,7 +1153,6 @@ form{
     /* BUSCADOR */
  
     .navbar-nav{
-
         width: 90%;
         flex-wrap: wrap;
         margin: 0 auto;
